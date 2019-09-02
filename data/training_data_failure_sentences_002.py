@@ -1,10 +1,25 @@
 
+# sources:
 #https:\\raygun.com\blog\costly-software-errors-history\
 #https:\\www.tricentis.com\softwaretesting\real-life-examples-software-development-failures
 #https:\\www.projectmanager.com\blog\failed-projects
 #https:\\www.workfront.com\blog\project-failure-10-famous-failures-and-5-ways-to-spot-them-before-they-happen
 #http:\\calleam.com\WTPF\?p=8540
-
+#https://www.lovemoney.com/gallerylist/65252/the-very-public-failures-of-16-famous-businesses
+#https://www.lovemoney.com/galleries/56183/epic-business-fails-that-cost-companies-cash-and-reputation?page=1
+#https://www.computerworld.com/article/2533563/it-s-biggest-project-failures----and-what-we-can-learn-from-them.html?page=2
+#https://spectrum.ieee.org/riskfactor/computing/it/it-failures-2018-all-the-old-familiar-faces
+#https://www.forentrepreneurs.com/why-startups-fail/
+#https://www.cbinsights.com/research/startup-failure-reasons-top/
+#https://www.quora.com/Why-do-customization-startups-fail
+#http://www.forbesindia.com/article/real-issue/the-rise-and-fall-of-educomp/34993/0
+#https://medium.com/swlh/inside-the-failure-of-a-startup-b4a123c962bb
+#https://www.fastcompany.com/90239881/your-startup-is-failing-now-what
+#https://www.fastcompany.com/90296151/coming-clean-on-a-painful-failure-allowed-me-to-move-on-from-it
+#https://www.fastcompany.com/90314465/these-are-the-lessons-i-learned-from-failure
+#https://medium.com/@jasonhuertas/my-startup-failed-6c54bd68c654
+#https://medium.com/swlh/what-i-learned-from-my-failed-startup-98e8ecf64ef3
+#https://medium.com/swlh/why-90-of-startups-fail-and-what-to-do-about-it-b0af17b65059
 
 
 failure_sentences = {
@@ -687,7 +702,314 @@ failure_sentences = {
   "the disastrous demonstration of the system had shown to the world how bad the state of the project really was":0,\
   "the project suffered many other difficulties":0,\
   "the electrical system suffered from power fluctuations that crashed the system":0,\
-  "Mr Slinger’s replacement lacked the in depth engineering knowledge required to understand the system.":0,\
+  "Mr Slinger’s replacement lacked the in depth engineering knowledge required to understand the system":0,\
+  "the business thrived up until the 1970s, but following the Air Transportation Deregulation Act of 1978, it fell into a downward spiral":0,\
+  "By 1989 the company was forced into bankruptcy":0,\
+  "rising oil prices led to a decline in sales":0,\
+  "the company's failure to withstand turbulent times was its death knell":0,\
+  "the airline ceased operations in December 1991":0,\
+  "Despite attempting a relaunch under the name Commodore USA between 2010-2013, the brand ultimately went defunct":0,\
+  "the company filed for bankruptcy":0,\
+  "In July 2002, WorldCom filed for bankruptcy":0,\
+  "the product performed poorly":0,\
+  "the brand was restricted to a small number of budget models until it was quietly discontinued in 2013":0,\
+  "Unable to turn the business around, Woolworth’s announced in July 1997 it would close more than 400 five-and-dime stores in the US":0,\
+  "the chain was forced to go bankrupt in September 2017":0,\
+  "deliveries failed to leave its depot":0,\
+  "The failure was blamed on poor management and understaffing":0,\
+  "United Airlines took a huge reputational hit":0,\
+  "All music uploaded to the site before 2016 plus photos and videos were lost after a faulty server migration":0,\
+  "The app-based taxi service Uber has been beset by PR disaster after PR disaster since its launch in 2011":0,\
+  "Toyota has been forced to issue a number of recalls in recent years":0,\
+  "The Japanese firm also recalled millions of vehicles over the summer of 2016,":0,\
+  "the company's reputation is in tatters":0,\
+  "its share price has plummeted ":0,\
+  "the firm potentially faces billions of dollars in fines from the US Justice Department and the EU":0,\
+  "the backlash was swift and brutal":0,\
+  "some thought the campaign was naive and patronising":0,\
+  "leading to a drop in sales and a dip in its share price":0,\
+  "Hoover UK eventually lost millions as a result of the promo":0,\
+  "Ratner's misjudged remarks hit sales hard":0,\
+  "Two Western states spent the 1990s attempting to computerize their departments of motor vehicles, only to abandon the projects after spending millions of dollars.":0,\
+  "the new system was slower than the one it was designed to replace":0,\
+  "an unworkable system that could not be fixed without the expenditure of millions more":0,\
+  "the system promptly ran into what were then described as horrendous barcode-reading errors":0,\
+  "Two years later, the entire project was scrapped, and Sainsbury's wrote off £150 million in IT costs":0,\
+  "In April 2005, SAIC delivered 700,000 lines of code that the FBI considered so bug-ridden and useless that the agency decided to scrap the entire VCS project":0,\
+  "Congress learned that the pilot project was being delayed":0,\
+  "PSA Airlines, a wholly owned subsidiary of American Airlines, experienced a problem with its crew scheduling and tracking system that led to nearly 3,000 flights being cancelled over seven days in June, and cost the airline an estimated US $35 million":0,\
+  "Spirit Airlines had multiple IT issues in 2018, including problems in February and March":0,\
+  "A Southwest Airlines computer problem with its gate and lobby check-in systems at LAX in January lasted more than three hours, causing hundreds of flight delays across its system":0,\
+  "Delta Airlines had a three-hour “physical device issue” in September, causing a system-wide ground stop for more than an hour and the delay of some 600 flights":0,\
+  "Air Canada experienced two network-related failures in February and March":0,\
+  "British Airways suffered a world-wide computer system problem in July and another computer issue at London Heathrow Terminal Five in September":0,\
+  "An air traffic control computer failure at the Eurocontrol centre in Brussels delayed an estimated 14,000 European flights in April":0,\
+  "the U.S. Customs and Border Protection computer systems experienced an outage, leaving thousands of international passengers across the country in long queues waiting to clear customs":0,\
+  "Fiat Chrysler recalled 5.3 million multiple car models for a cruise control issue":0,\
+  "GM recalled one million pickups and SUVs to fix a steering problem":0,\
+  "Google decided in October to close its Google Plus social network because of a security flaw":0,\
+  "A botched migration to a new software platform in April at TSB bank in the United Kingdom caused major disruptions for weeks, angered the bank’s 5 million customers, and eventually led to the resignation of its CEO":0,\
+  "Minnesota’s multi-year effort to deliver a fully functional vehicle and driver services system continues to have annoying problems":0,\
+  "The U.S. Coast Guard finally admitted defeat after spending $67 million in its mismanaged attempt to develop an electronic health record":0,\
+  "German supermarket company Lidl decided in July to scrap an ineffective three-year old merchandise management system after spending more than $565 million on it":0,\
+  "Amazon suffered glitches for several hours in July when demand exceeded expectations on Prime Day":0,\
+  "Demand also couldn’t be met by KFC in the United Kingdom after the failure of the logistics management system at its new supplier caused it to shut down 470 stores for several days because of a lack of chicken to fry":0,\
+  "There is not a compelling enough value proposition, or compelling event, to cause the buyer to actually commit to purchasing":0,\
+  "There is little or no market for the product that they have built":0,\
+  "The market timing is wrong":0,\
+  "The market size is simply not large enough":0,\
+  "entrepreneurs are too optimistic about how easy it will be to acquire customers":0,\
+  "it rapidly becomes an expensive task to attract and win customers":0,\
+  "An incredibly common problem that causes startups to fail is a weak management team":0,\
+  "building a product that no-one wants to buy":0,\
+  "they failed to do enough work to validate the ideas before and during development":0,\
+  "This can carry through to poorly thought through go-to-market strategies":0,\
+  "They are usually poor at execution":0,\
+  "this leads to issues with the product not getting built correctly or on time":0,\
+  "the go-to market execution will be poorly implemented":0,\
+  "They will build weak teams below them":0,\
+  "the rest of the company will end up as weak, and poor execution will be rampant":0,\
+  "A major reason that startups fail is because they ran out of cash":0,\
+  "management did not achieve the next milestone before cash ran out":0,\
+  "What frequently goes wrong, and leads to a company running out of cash, and unable to raise more":0,\
+  "Another reason that companies fail is because they fail to develop a product that meets the market need":0,\
+  "the product will be way off base, and a complete re-think is required":0,\
+  "Dwelling or being married to a bad idea can sap resources and money as well as leave employees frustrated by a lack of progress":0,\
+  "We were caught mid-pivot – half way between a strategy we knew wouldn’t work and one which we believed could be successful but was not able to be aggressively pursued":0,\
+  "This was a very difficult place to be both professionally and personally":0,\
+  "We were extremely frustrated at not being able to properly go after our new strategy and every day that passed without meaningful progress was one step closer to the failure of my first company":0,\
+  "Even though we put everything we had into getting through this phase we were never able to make it through the pivot":0,\
+  "the risk of burning out is high":0,\
+  "entrepreneurs who said they did not properly utilize their own network":0,\
+  "I think we made the mistake early on of trying to do (and know) everything ourselves":0,\
+  "We received a notice from them informing us we weren’t compliant and unless we removed it they’d suspend our affiliate account":0,\
+  "It’s an incredibly expensive venture to pursue and a hard industry to work with":0,\
+  "We had to shut down our growth because we couldn’t launch internationally":0,\
+  "a number of startup founders explicitly cited a lack of investor interest":0,\
+  "The software and concept simply didn’t scale beyond its physical borders":0,\
+  "lack of teamwork and planning could lead to failure":0,\
+  "The most significant drawback to a remote team is the administrative hassle":0,\
+  "it was a major annoyance and distraction":0,\
+  "9% of startup post-mortem founders found that a lack of passion for a domain and a lack of knowledge of a domain were key reasons for failure no matter how good an idea is":0,\
+  "I think it’s fair to say we didn’t really care about journalism":0,\
+  "Or they can start you down the wrong road":0,\
+  "Pivoting for pivoting’s sake is worthless":0,\
+  "Discord with a cofounder was a fatal issue for startup post-mortem companies":0,\
+  "when things go bad with an investor, it can get ugly pretty quickly":0,\
+  "surrendered market leadership and thought leadership":0,\
+  "a vastly higher cost structure":0,\
+  "Getting sidetracked by distracting projects, personal issues, and/or general loss of focus":0,\
+  "Ultimately when we came back from SXSW, we all started losing interest":0,\
+  "I was wondering if I even wanted to run a startup":0,\
+  "If you release your product too early, users may write it off as not good enough":0,\
+  "getting them back may be difficult if their first impression of you is negative":0,\
+  "if you release your product too late, you may have missed your window of opportunity in the market":0,\
+  "we moved faster than our customers could move":0,\
+  "We moved with tech that wasn’t really ready for them – ie, with 32-bit when they wanted 64-bit.":0,\
+  "We moved when the operating-system environment was still being fleshed out":0,\
+  "We were too early":0,\
+  "Ignoring users is a tried and true way to fail":0,\
+  "We spent way too much time building it for ourselves and not getting feedback from prospects":0,\
+  "Tunnel vision and not gathering user feedback are fatal flaws for most startups":0,\
+  "We didn’t spend enough time talking with customers":0,\
+  "we didn’t gather enough input from clients":0,\
+  "We didn’t realize it until it was too late":0,\
+  "It’s easy to get tricked into thinking your thing is cool":0,\
+  "You have to pay attention to your customers and adapt to their needs":0,\
+  "an inability to market was a common failure":0,\
+  "founders who liked to code or build product but who didn’t relish the idea of promoting the product":0,\
+  "Then we hit the ceiling of what we could achieve effortlessly":0,\
+  "Unfortunately no one of us was skilled in that area":0,\
+  "Even worse, no one had enough time to fill the gap":0,\
+  "failing to find ways to make money at scale":0,\
+  "staying wedded to a single channe":0,\
+  "investors hesitant":0,\
+  "founders unable to capitalize on any traction gained":0,\
+  "Although we achieved a lot with Tutorspree, we failed to create a scalable business":0,\
+  "Tutorspree didn’t scale because we were single channel dependent":0,\
+  "we didn’t have money to spend on acquisition":0,\
+  "Bad things happen when you ignore what a users wants and need":0,\
+  "Ultimately I believe PMOG lacked too much core game compulsion to drive enthusiastic mass adoption":0,\
+  "Looking back I believe we needed to clear the decks":0,\
+  "The concept was too abstruse for the bulk of folks to take up.":0,\
+  "the difficulty in pricing a product high enough to eventually cover costs but low enough to bring in customers":0,\
+  "We just didn’t deliver up to their expectation":0,\
+  "Delight IO saw this struggle in multiple ways":0,\
+  "ignoring them was also a recipe for failure":0,\
+  "Between the worse data aggregation method and the much higher amount of work Wesabe made you do":0,\
+  "But none of them matter if the product is harder to use":0,\
+  "they shouldn’t be founding a startup":0,\
+  "the founding team can’t put out product on its own":0,\
+  "the founding team wished they had more checks and balances":0,\
+  "I didn’t have a partner to balance me out and provide sanity checks for business and technology decisions made":0,\
+  "the underlying problem":0,\
+  "running out of cash":0,\
+  "the company wasn’t able to raise this additional funding.":0,\
+  "what eventually killed Flud":0,\
+  "Flud eventually ran out of money":0,\
+  "Tackling problems that are interesting to solve rather than those that serve a market need":0,\
+  "we had no customers":0,\
+  "no one was really interested in the model we were pitching":0,\
+  "Startups fail when they are not solving a market problem":0,\
+  "We were not solving a large enough problem that we could universally serve with a scalable solution":0,\
+  "what we didn’t have was technology or business model that solved a pain point in a scalable way":0,\
+  "where we went wrong":0,\
+  "Not mobile friendly":0,\
+  "Difficult to integrate with ecommerce systems":0,\
+  "Most customers abandon configurators because they get creatively frustrated":0,\
+  "These legacy problems lead to really low sales conversion rates for custom-coded configurators":0,\
+  "we had  accidentally built a services company":0,\
+  "We couldn't find a way to standardize customization":0,\
+  "We just couldn't make the economics work":0,\
+  "the quality of leads was really bad":0,\
+  "we still struggled to ship the configurator quickly":0,\
+  "we confused interest with traction":0,\
+  "which was encouraging, but often didn’t lead to money in the bank in the short-term":0,\
+  "long sales cycle and lots of red tape which we couldn’t afford to deal with":0,\
+  "They will bleed you dry":0,\
+  "Most clients who are dealing with rubbish code end up deciding to keep babysitting it rather than ripping and replacing it":0,\
+  "a pain in the ass and prone to complication":0,\
+  "they never spend any money promoting it and it goes unused and is left to die":0,\
+  "not optimized for sales":0,\
+  "a dying industry":0,\
+  "It’s probably a bad sign when you don’t have any direct competitors":0,\
+  "One reason generizing the configurator is problematic":0,\
+  "why marketplaces like Zazzle, CafePress, and eBay struggle":0,\
+  "the project management nightmare":0,\
+  "Probably the biggest reason we failed":0,\
+  "they dropped the ball because the project wasn’t dead simple":0,\
+  "I don’t think we ever used the same CSS, design, ecommerce, or image creation vendor twice because they all suck":0,\
+  "Configurators are too complex to standardize":0,\
+  "technology doesn't necessarily solve the right problem for the customer":0,\
+  "some of our client projects were not finished after as long as TWO YEARS":0,\
+  "Often the project was out of our control after we did the heavy-lifting":0,\
+  "clients just left it hanging":0,\
+  "It's so frustrating to not control the button that pushes the build live":0,\
+  "We really build a platform for configurator engineers, which was another fatal flaw":0,\
+  "we mistakenly thought if we served his need we would serve the market’s need":0,\
+  "The wrong problem":0,\
+  "We mistakenly thought the primary problem to solve was guidance":0,\
+  "Never make your customers do hard work":0,\
+  "they quickly get frustrated and seek out expert recommendations":0,\
+  "The main headache was the manufacturing process":0,\
+  "clients were using something bloated and archaic like NetSuite":0,\
+  "a few horror stories that we experienced on the sales side":0,\
+  "In the end we just couldn’t accept those terms":0,\
+  "Startups fail when they are not solving a market problem":0,\
+  "We were not solving a large enough problem that we could universally serve with a scalable solution":0,\
+  "Many startups do not realize that customization per se provides no customer value":0,\
+  "Bad execution and no scalable fulfillment systems":0,\
+  "I saw several startups killed by their own success":0,\
+  "they couldn't deliver when lots of orders came in after a big press hit":0,\
+  "No focus on a great consumer choice process":0,\
+  "many MC startups do not really implement all the factors":0,\
+  "not mastering the difficult change management process required there":0,\
+  "it's not scalable":0,\
+  "veer off into a death spiral":0,\
+  "never reaching your business idea's potential":0,\
+  "To miss the gail winds is to lose the race":0,\
+  "they don’t understand positioning":0,\
+  "network randomly, without focus":0,\
+  "Do not waste money getting fancy office-space and furniture":0,\
+  "You might fail because you haven't come up with a solid Problem/Solution fit":0,\
+  "rushing to grow without any hints of a fit":0,\
+  "you don't have a user feedback loop strategy in place":0,\
+  "Little or no knowledge of pricing":0,\
+  "lack of proper budgeting and operational mismanagement drains start-up capital and sales revenue":0,\
+  "lack of clear focus":0,\
+  "an idea will sink in a wake of frustration":0,\
+  "Did they misjudge the fundamental risk at the outset":0,\
+  "Did the team succumb to groupthink and thereby overestimate their own probability of success":0,\
+  "fundamental misjudgments":0,\
+  "unforeseen environmental changes":0,\
+  "you fail to change your original idea upon realizing that things are not going as planned":0,\
+  "most startup failure revolves around people issues":0,\
+  "No demonstrated user need":0,\
+  "Management that doesn't really care for the employees":0,\
+  "A team that has a hard time being pragmatic will spend a lot of their time and money on shit that doesn't matter":0,\
+  "Despite all that most ideas never succeeded":0,\
+  "New ideas fail everywhere with a high probability":0,\
+  "Walmart entered ecommerce late as they believed people were not likely to buy through computers":0,\
+  "There is no process to hold the discipline and no brand to lean on":0,\
+  "There is no real HR process to manage talent and no good financial management":0,\
+  "the executives have no experience wading through tough times":0,\
+  "There is no established relationship with customers and no established channels":0,\
+  "Product quality is often poor in the early days and customer support not as professional":0,\
+  "the endless supply of amateurs that fall victim to the siren's enticing call":0,\
+  "These people have no idea about how to price products ":0,\
+  "I know they are pitfalls because I have fallen into them all":0,\
+  "advisers who can single-handedly wipe out your budget and ability to spend money where it matters most":0,\
+  "The cost of compliance at the outset can cripple a cafe in such a way that they never really recover":0,\
+  "the order taking and payment system is not efficient":0,\
+  "you begin the slow spiral slide into failure":0,\
+  "you can go broke being obsessed with profit":0,\
+  "an unsuitable location can be the single biggest reason why cafes fail":0,\
+  "Add to this some poor pricing strategies and you set up a guaranteed failure":0,\
+  "your customers have to spend a long time finding you or looking for parking":0,\
+  "Things have been bleak internally as well during the last two years":0,\
+  "the debt and liabilities on its stressed balance sheet":0,\
+  "Educomp’s net profit margin has fallen 61 percent during the last four years;":0,\
+  "four consecutive company secretaries would resign":0,\
+  "Educomp missed contractual deadlines for installation and commissioning":0,\
+  "many schools across the country weren’t paying it in time":0,\
+  "That’s too much to bear":0,\
+  "Analysts and investors were aghast":0,\
+  "That was the beginning of the downfall of their stock":0,\
+  "this was a clear example of a promoter who was pursuing an unsustainable path":0,\
+  "they still have a mountain of debt to cross":0,\
+  "it’s a toxic wasteland from a security perspective":0,\
+  "WordPress is the outdated disaster behind most of the world’s websites":0,\
+  "that’s where most of the existing security and performance products live":0,\
+  "WordPress doesn’t scale horizontally like a modern application and it has no real security baked in":0,\
+  "It’s awful":0,\
+  "I started to feel there was something seriously wrong in early October":0,\
+  "the road went nowhere":0,\
+  "nobody came back to us":0,\
+  "it was confusing, poorly explained or too complicated":0,\
+  "it was becoming internally confusing what we offering on any given day":0,\
+  "it was clear they didn’t want to hear from us anymore":0,\
+  "their answer effectively ended the business":0,\
+  "We could never get to that first paying customer":0,\
+  "my million-dollar valuation evaporated":0,\
+  "Security products are impossible to sell":0,\
+  "People won’t pay for it":0,\
+  "they don’t understand the problem":0,\
+  "large companies will never try anything new":0,\
+  "solving a problem nobody has":0,\
+  "We had only wasted our own time and about a thousand dollars between the three of us":0,\
+  "There is an apathy in the marketplace":0,\
+  "Unfortunately, it is very common in the startup world that a venture has to close down":0,\
+  "The market wasn’t ready,":0,\
+  "The product wasn’t ready":0,\
+  "We were burning through cash too quickly":0,\
+  "a bad place to be":0,\
+  "the idea is never going to make it":0,\
+  "we realized that the program wasn’t meeting the high standards it required":0,\
+  "we couldn’t assure the scale or quality of the program on the ground":0,\
+  "everyone who looked in at us could see our dismay":0,\
+  "a challenge we couldn’t meet":0,\
+  "I could see that they were making reckless decisions":0,\
+  "nearly running the company into the ground":0,\
+  "I realized that I had failed in my role":0,\
+  "the firm wasn’t acting in the best interest of the company":0,\
+  "This resulted in two major customers terminating their agreement with the company":0,\
+  "which prompted a series of lawsuits":0,\
+  "we couldn’t undo the damage":0,\
+  "Money Centers of America Inc had a major crisis":0,\
+  "this crushed my spirit and dampened my motivation to keep going":0,\
+  "It was a very frustrating and dark place to be in":0,\
+  "If you’re focusing all your time on the wrong things, you end up going nowhere, burning out":0,\
+  "They run out of money, or they have some sort of founder breakup":0,\
+  "He failed to execute several tasks that he assigned to himself":0,\
+  "He cracked under slightest pressure":0,\
+  "He would compromise all of the business in a critical situation":0,\
+  "They are not representing the real picture":0,\
+  "First I failed with my co-founder and then I failed again with my hire":0,\
+  "I tried to sell my product to academia and no one was interested":0,\
+  "We have applied to both Y Combinator and TechStars and got rejected":0,\
+  "I pitched many times and couldn’t raise the money":0,\
+  "It felt bad":0,\
+  "I was extremely ignorant and had no idea what I was doing":0,\
   "":0,\
   "":0,\
   "":0,\
@@ -698,4 +1020,11 @@ failure_sentences = {
   "":0,\
   "":0,\
   "":0,\
+  "":0,\
+  "":0,\
+  "":0,\
+  "":0,\
+  "":0,\
+  "":0,\
+
 }
