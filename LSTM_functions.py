@@ -100,7 +100,7 @@ def LSTM_graph(max_len, embedding_df):
 # train LSTM model
 # hp = hyperparameters
 # hp["n_folds"] > 1 : do crossvalidation, return out-of-fold prediction for each point
-# hp["n_folds"] < 1 : no crossvalidation, just train on full dataset
+# hp["n_folds"] < 1 : no crossvalidation
 def train_LSTM(positives, negatives, mapping, hp=get_default_hyperparameters(), ):
 
     full_embedded              = embed_sentences(mapping, positives + negatives, "index_matrix")
@@ -113,15 +113,20 @@ def train_LSTM(positives, negatives, mapping, hp=get_default_hyperparameters(), 
         assert n_negative <= negative_embedded.shape[0], "insufficient negative data for this negative/positive ratio"
     else:
         n_negative = len(negatives)
-    negative_embedded_sub =\
-        negative_embedded[np.random.permutation(negative_embedded.shape[0])[0:n_negative],:]
+    negative_indices = np.random.permutation(negative_embedded.shape[0])[0:n_negative]
+    negative_embedded_sub = negative_embedded[negative_indices,:]
 
 
     training_mat = np.concatenate([positive_embedded, negative_embedded_sub], axis=0)
     labels = np.array([1]*n_positive + [0]*n_negative)
+    training_cases  = positives + [negatives[i] for i in negative_indices]
+    #these are the cases that are actually used for training
+    #return them in case they are useful for error analysis
 
     if(hp["n_folds"]>1):
+        #first step:
         #use crossvalidation to estimate performance on hold-out data
+        #the model versions trained here are not returned! they are discarded
         skf = StratifiedKFold(n_splits = hp["n_folds"], random_state = 33, shuffle=True)
         out_of_fold_preds = np.nan*np.ones([training_mat.shape[0], 1])
         #predictions made when the given data point was in holdout set
@@ -133,13 +138,11 @@ def train_LSTM(positives, negatives, mapping, hp=get_default_hyperparameters(), 
             model.fit(training_mat[train_indices,:], labels[train_indices],\
                       epochs=hp["n_epochs"], batch_size=hp["batch_size"], shuffle=True)
             out_of_fold_preds[test_indices,:] = model.predict(training_mat[test_indices,:])
-    else:
-        #do not use crossvalidation
-        #just train on all data provided
-        model = LSTM_graph(training_mat.shape[1], mapping)
-        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-        model.fit(training_mat, labels,\
-                  epochs=hp["n_epochs"], batch_size=hp["batch_size"], shuffle=True)
-        out_of_fold_preds = None
+    #now do not use crossvalidation
+    #just train on all data provided
+    #to obtain the final trained model, which is returned
+    model = LSTM_graph(training_mat.shape[1], mapping)
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.fit(training_mat, labels, epochs=hp["n_epochs"], batch_size=hp["batch_size"], shuffle=True)
 
-    return (model, out_of_fold_preds)
+    return (model, out_of_fold_preds, labels, training_cases)
