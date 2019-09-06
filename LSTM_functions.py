@@ -38,8 +38,9 @@ from keras.initializers import glorot_uniform
 
 def get_default_hyperparameters():
     return {\
-    "negative_positive_ratio":1,\
-    "neutral_positive_ratio":1,\
+    "n_negative":1000,\
+    "n_positive":1000,\
+    "n_neutral":1000,\
     "n_epochs":50, \
     "n_folds":5,\
     "batch_size":32,\
@@ -180,35 +181,35 @@ def train_LSTM(positives, negatives, neutrals, mapping, hp=get_default_hyperpara
     negative_embedded = full_embedded[len(positives):(len(positives) + len(negatives)),:]
     neutral_embedded  = full_embedded[(len(positives) + len(negatives)):,:]
 
-    n_positive = len(positives)
-    if(hp["negative_positive_ratio"] > 0):
-        n_negative = int(np.floor(hp["negative_positive_ratio"]*n_positive))
-        assert n_negative <= negative_embedded.shape[0], "insufficient negative data for this negative/positive ratio"
-    else:
-        n_negative = len(negatives)
-    if(hp["neutral_positive_ratio"] > 0):
-        n_neutral = int(np.floor(hp["neutral_positive_ratio"]*n_positive))
-        assert n_neutral <= neutral_embedded.shape[0], "insufficient neutral data for this neutral/positive ratio"
-    else:
-        n_neutral = len(neutrals)
+    n_positive = hp["n_positive"]
+    n_negative = hp["n_negative"]
+    n_neutral  = hp["n_neutral"]
+
+    assert n_positive <= positive_embedded.shape[0], "insufficient positive data provided"
+    assert n_negative <= negative_embedded.shape[0], "insufficient negative data provided"
+    assert n_neutral  <= neutral_embedded.shape[0], "insufficient neutral data provided"
+
+    positive_indices = np.random.permutation(positive_embedded.shape[0])[0:n_positive]
+    positive_embedded_sub = positive_embedded[positive_indices,:]
     negative_indices = np.random.permutation(negative_embedded.shape[0])[0:n_negative]
     negative_embedded_sub = negative_embedded[negative_indices,:]
     neutral_indices = np.random.permutation(neutral_embedded.shape[0])[0:n_neutral]
     neutral_embedded_sub = neutral_embedded[neutral_indices,:]
 
 
-    training_mat = np.concatenate([positive_embedded, negative_embedded_sub, neutral_embedded_sub], axis=0)
+    training_mat = np.concatenate([positive_embedded_sub, negative_embedded_sub, neutral_embedded_sub], axis=0)
 
-    training_cases  = positives + [negatives[i] for i in negative_indices] + [neutrals[i] for i in neutral_indices]
+    training_cases  = [positives[i] for i in positive_indices] + [negatives[i] for i in negative_indices] + [neutrals[i] for i in neutral_indices]
     #these are the cases that are actually used for training
     #return them in case they are useful for error analysis
     labels = np.array([0]*n_positive + [1]*n_negative + [2]*n_neutral)
     #labels for error analysis
+    #will be equivalent to argmax of correct classifier output
     y = np.zeros([training_mat.shape[0], 3])
     #one-hot matrix for training
     y[0:n_positive,0] = 1
     y[n_positive:(n_positive + n_negative),1] = 1
-    y[(n_positive + n_negative),2] = 1
+    y[(n_positive + n_negative):,2] = 1
 
     if(hp["n_folds"]>1):
         #first step:
