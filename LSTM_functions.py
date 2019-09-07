@@ -211,13 +211,13 @@ def train_LSTM(positives, negatives, neutrals, mapping, hp=get_default_hyperpara
     y[n_positive:(n_positive + n_negative),1] = 1
     y[(n_positive + n_negative):,2] = 1
 
-    if(hp["n_folds"]>1):
+    if(hp["n_folds"]>=2):
         #first step:
         #use crossvalidation to estimate performance on hold-out data
         #the model versions trained here are not returned! they are discarded
         #keep only the predictions
         skf = StratifiedKFold(n_splits = hp["n_folds"], random_state = 33, shuffle=True)
-        predictions = np.nan*np.ones([training_mat.shape[0], 1])
+        predictions = np.nan*np.ones([training_mat.shape[0], 3])
         #predictions made when the given data point was in holdout set
 
         for k, (train_indices, test_indices) in enumerate(skf.split(training_mat, labels)):
